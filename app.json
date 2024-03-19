@@ -2,7 +2,7 @@
   "expo": {
     "name": "StickerSmash",
     "slug": "StickerSmash",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,16 +15,37 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aabstract.StickerSmash"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aabstract.StickerSmash"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4ace2a22-fc8f-4e9b-b74d-cf13f73d4e6b"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/4ace2a22-fc8f-4e9b-b74d-cf13f73d4e6b"
     }
-  }
+  },
+  "plugins": [
+    [
+      "expo-updates",
+      {
+        "username": "aabstract"
+      }
+    ]
+  ]
 }
